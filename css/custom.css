@@ -70,11 +70,6 @@ h3, h4, h5, h6 {
   font-size: 1.4rem;
 }
 
-p a {
-  font-family: 'Open Sans Bold', 'Helvetica', sans-serif;
-  color: #515665;
-}
-
 a:hover, a:focus, a:active {
   color: #05C6B4;
 }
@@ -103,7 +98,7 @@ section {
 }
 
 .section-header h1 {
-  font-size: 6rem;
+  font-size: 5.5rem;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #515665;
@@ -182,6 +177,11 @@ header.page-title h1 {
   flex-wrap: initial;
 }
 
+#top-nav.navbar-light .navbar-nav .nav-item {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
 #top-nav.navbar-light .navbar-nav .nav-link {
   color: #707782;
 }
@@ -196,7 +196,7 @@ header.page-title h1 {
 
 #top-nav.navbar-light .navbar-nav .p2pu-btn {
   font-size: 0.8rem;
-  padding: 8px 16px
+  padding: 8px 16px;
 }
 
 #page-header {
@@ -263,21 +263,21 @@ header.page-title h1 {
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
-#details .itinerary {
+.itinerary {
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
 }
 
-#details .itinerary > div {
+.itinerary > div {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 0;
   padding-right: 2rem;
 }
 
-#details .date {
+.date {
   font-family: 'Open Sans Bold', 'Helvetica', sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
@@ -542,7 +542,7 @@ header.page-title h1 {
   animation-iteration-count: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   body {
     font-size: 18px;
   }
@@ -563,8 +563,8 @@ header.page-title h1 {
     min-height: none;
   }
 
-  #page-header.jumbotron {
-    padding-top: 2rem;
+  #page-header {
+    padding: 4vh 2vw;
   }
 
   #page-header .container .greeting {
